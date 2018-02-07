@@ -1,0 +1,109 @@
+header {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color: white;
+	padding: 20px;
+	font-family: Helvetica; 
+	justify-content: space-between;
+}
+
+header nav {
+	align-items: right;
+}
+
+header nav a {
+	color: gray;
+}
+
+.main {
+
+	padding-top: 100px;
+	position: relative;
+}
+
+.preview-tiles {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.preview-tiles span {
+	border-color: black;
+	border-top: : 20px;
+	background-color: cyan;
+}
+
+#button-one {
+	background-color: purple;
+}
+
+#button-two {
+	background-color: orange;
+}
+
+#button-three {
+	background-color: cyan;
+}
+
+.preview-tiles span a {
+	color: white;
+}
+
+.box-large {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 300px;
+}
+
+.box-small {
+	width: 250px;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: orange;
+}
+
+.circle-small {
+	width: 250px;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: orange;
+	border-radius: 50%;
+}
+
+.work {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.developer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.developer .portfolio-item {
+	background-color: purple;
+}
+
+.designer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.artist {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

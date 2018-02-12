@@ -3,56 +3,76 @@
 <head>
 	<title>Davin Hazard</title>
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 </head>
 <body>
 	<!--Header-->
 	<header>
 	<!--Personal Logo-->
-		<div class="logo">
-		<span>Davin Hazard</span>
+		<div id="logo">
+		<span>DAVIN HAZARD</span>
 		</div>
 	<!--Nav Bar-->
 		<nav>
-			<span><a href="#">About</a></span>
-			<span><a href="#">Work</a></span>
-			<span><a href="#">Contact</a></span>
+			<span><a href="#about">About</a></span>
+			<span><a href="#work">Work</a></span>
+			<span><a href="#contact">Contact</a></span>
 		</nav>
 	</header>
 	<!--Main Content-->
-	<div class="main">
+	<div id="main">
 	<!--Work Preview Tiles-->
 		<div class="preview-tiles">
-			<span class="box-large" id="button-one"><a href="#">Developer</a></span>
-			<span class="box-large" id="button-two"><a href="#">Designer</a></span>
-			<span class="box-large" id="button-three"><a href="#">Artist</a></span>
+			<span class="box-large" id="button-one">
+			<a href="#developer">Developer</a>
+			</span>
+			<span class="box-large" id="button-two"><a href="#designer">Designer</a></span>
+			<span class="box-large" id="button-three"><a href="#artist">Artist</a></span>
 		</div>
 	<!--About Section-->
-		<div class="about">
-			<img>
-			<p id="text">This is where I write a bunch of stuff about myself. I am a developer, designer, and artist. I'm a passionate generalist, excited by the intersection of art, technology, and culture. In my free time I enjoy making gifs, petting dogs, and drinking coffee. Check out some of my selected work below.
-			</p>
+		<div id="about">
+			<img src="resources/images/elio.png">
+			<div id="about-text">
+				<h1>Hi! I'm Davin</h1>
+				<p>This is where I write a bunch of stuff about myself. I am a developer, designer, and artist. I'm a passionate generalist, excited by the intersection of art, technology, and culture. In my free time I enjoy making gifs, petting dogs, and drinking coffee. Check out some of my selected work below.
+				</p>
+			</div>
 		</div>
 	<!--Work Section-->
-		<div class="work">
-			<div class="developer">
-				<span class="portfolio-item box-small">VR Games</span>
-				<span class="portfolio-item box-small">Android App</span>
-				<span class="portfolio-item box-small">Web Development</span>
-				<span class="portfolio-item box-small">Animation + Motion Capture</span>
+		<div id="work">
+			<div class="work-item" id="developer">
+				<h3>Developer</h3>
+				<span>Languages I speak : C++ Java Python HTML/CSS</span>
+				<div id="developer-items">
+					<span class="portfolio-item box-small" id="vr-icon">VR Games</span>
+					<span class="portfolio-item box-small" id="android-icon">Android App</span>
+					<span class="portfolio-item box-small" id="webdev-icon">Web Development</span>
+					<span class="portfolio-item box-small" id="animation-icon">Animation + Motion Capture</span>
+				</div>
 			</div>
-			<div class="designer">
-				<span class="portfolio-item circle-small">Product Design</span>
-				<span class="portfolio-item circle-small">Typography + Bookmaking</span>
-				<span class="portfolio-item circle-small">Logo Design</span>
+			<div class="work-item" id="designer">
+				<h3>Designer</h3>
+				<span>Tools I use : Adobe Creative Suite My Own Two Hands</span>
+				<div id="designer-items">
+					<span class="portfolio-item box-small" id=product-icon>Product Design</span>
+					<span class="portfolio-item box-small" id="typography-icon">Typography + Bookmaking</span>
+					<span class="portfolio-item box-small" id="logo-icon">Logo Design</span>
+				</div>
 			</div>
-			<div class="artist">
-				<span class="portfolio-item box-small">Painting</span>
-				<span class="portfolio-item box-small">Digital + Pixel Art</span>
-				<span class="portfolio-item box-small">3D Modeling</span>
-				<span class="portfolio-item box-small">Drawing</span>
+			<div class="work-item" id="artist">
+				<h3>Artist</h3>
+				<span>Mediums I like : Painting Drawing Digital</span>
+				<div id="artist-items">
+					<span class="portfolio-item box-small" id="painting-icon">Painting</span>
+					<span class="portfolio-item box-small" id="digital-icon">Digital + Pixel Art</span>
+					<span class="portfolio-item box-small" id="modeling-icon">3D Modeling</span>
+					<span class="portfolio-item box-small" id="drawing-icon">Drawing</span>
+				</div>
 			</div>
 		</div>
 	<!--Contact-->
+		<div id="contact">
+		</div>
 	<!--Footer-->
 		<footer>
 			<span>copyright Davin Hazard 2018</span>

@@ -1,25 +1,65 @@
+@font-face {
+	font-family: apercu;
+	src: ../fonts/Apercu.otf;
+}
+
+* {
+	font-family: apercu,'Work Sans', sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+h3 {
+	font-size: 24px;
+}
+
 header {
 	display: flex;
 	width: 100%;
 	position: fixed;
 	z-index: 1;
 	background-color: white;
-	padding: 20px;
+	padding-top: 20px;
+	padding-left: 60px;
+	padding-right: 600px;
+	padding-bottom: 20px;
 	font-family: Helvetica; 
 	justify-content: space-between;
 }
 
+#logo span{
+	font-size: 36px;
+}
 header nav {
-	align-items: right;
+	align-items: bottom;
+	padding-right: 120px;
+	padding-top: 10px;
 }
 
 header nav a {
 	color: gray;
+	padding: 8px;
+	font-size: 18px;
 }
 
-.main {
+a:link  {
+	text-decoration: none;
+}
 
-	padding-top: 100px;
+.box-large a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+
+#main {
+
+	padding-top: 30px;
 	position: relative;
 }
 
@@ -27,36 +67,85 @@ header nav a {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	padding-top: 150px;
+	padding-bottom: 200px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .preview-tiles span {
 	border-color: black;
 	border-top: : 20px;
-	background-color: cyan;
 }
 
 #button-one {
-	background-color: purple;
+	background-image: url("../images/square_stock_1.jpg");
+	background-size: 350px 350px;
+	box-shadow: inset 0 0 0 350px rgba(235, 113, 251,.5);
+	/*background-color: rgb(235, 113, 251);*/
+}
+
+#button-one:hover {
+	box-shadow: inset 0 0 0 350px rgba(235, 113, 251,.8);
 }
 
 #button-two {
-	background-color: orange;
+	background-image: url("../images/square_stock_2.jpg");
+	background-size: 350px 350px;
+	box-shadow: inset 0 0 0 350px rgba(255, 97, 0, .5);
+	/*background-color: rgb(255, 97, 0);*/
+}
+
+#button-two:hover {
+	box-shadow: inset 0 0 0 350px rgba(255, 97, 0,.8);
 }
 
 #button-three {
-	background-color: cyan;
+	background-image: url("../images/square_stock_3.jpg");
+	background-size: 350px 350px;
+	box-shadow: inset 0 0 0 350px rgba(0, 212, 235, .5);
+	/*background-color: rgb(0, 212, 235);*/
+}
+
+#button-three:hover {
+	box-shadow: inset 0 0 0 350px rgba(0, 212, 235, 0.8);
 }
 
 .preview-tiles span a {
 	color: white;
+	font-size: 36px;
+}
+
+#about {
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(177, 177, 177);
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	height: 750px;
+}
+
+#about img {
+	width: 25%;
+	height: 25%;
+	border-radius: 50%;
+	border: solid rgb(255, 219, 0) 7px;
+}
+
+#about #about-text {
+	color: white;
+	width: 500px;
+	font-size: 22px;
 }
 
 .box-large {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 300px;
-	height: 300px;
+	width: 350px;
+	height: 350px;
 }
 
 .box-small {
@@ -78,32 +167,119 @@ header nav a {
 	border-radius: 50%;
 }
 
-.work {
+#work {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.work-item {
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+#developer-items {
+	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	padding-top: 40px;
 }
 
-.developer {
+#developer-items .portfolio-item {
+	box-shadow: inset 0 0 0 250px rgba(235, 113, 251, 0.7);
+}
+
+#vr-icon {
+	background-image: url("../images/square_stock_5.jpg");
+	background-size: 250px;
+}
+
+#android-icon {
+	background-image: url("../images/square_stock_6.jpg");
+	background-size: 250px;
+}
+
+#webdev-icon {
+	background-image: url("../images/square_stock_4.jpg");
+	background-size: 250px;
+}
+
+#animation-icon {
+	background-image: url("../images/square_stock_1.jpg");
+	background-size: 250px;
+}
+
+#designer-items {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-
+	padding-top: 40px;
 }
 
-.developer .portfolio-item {
-	background-color: purple;
+#designer-items .portfolio-item {
+	box-shadow: inset 0 0 0 250px rgba(255, 97, 0, 0.7);
 }
 
-.designer {
+#product-icon {
+	background-image: url("../images/square_stock_4.jpg");
+	background-size: 250px;
+}
+
+#typography-icon {
+	background-image: url("../images/square_stock_5.jpg");
+	background-size: 250px;
+}
+
+#logo-icon {
+	background-image: url("../images/square_stock_6.jpg");
+	background-size: 250px;
+}
+
+#artist-items {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
+	padding-top: 40px;
+	padding-bottom: 120px;
 }
 
-.artist {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+#artist-items .portfolio-item {
+	box-shadow: inset 0 0 0 250px rgba(0, 212, 235, 0.7);
+}
+
+#painting-icon {
+	background-image: url("../images/square_stock_1.jpg");
+	background-size: 250px;
+}
+
+#digital-icon {
+	background-image: url("../images/square_stock_2.jpg");
+	background-size: 250px;
+}
+
+#modeling-icon {
+	background-image: url("../images/square_stock_3.jpg");
+	background-size: 250px;
+}
+
+#drawing-icon {
+	background-image: url("../images/square_stock_4.jpg");
+	background-size: 250px;
+}
+
+.portfolio-item {
+	color: white;
+	font-size: 24px;
+	text-align: center;
+}
+
+footer {
+	background-color: rgb(177, 177, 177);
+	height: 100px;
+}
+
+footer span {
+	color: white;
 }

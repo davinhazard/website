@@ -1,0 +1,90 @@
+@font-face {
+	font-family: apercu;
+	src: ../fonts/Apercu.otf;
+}
+
+body {
+	font-family: apercu, 'Work Sans', Helvetica;
+	border: 25px outset rgba(177, 177, 177, 0.5);
+	padding: 25px;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+h3 {
+	font-size: 2em;
+
+}
+
+.title {
+}
+
+.description{
+	padding-top: 1.75em;
+	padding-bottom: 1.75em;
+}
+
+#close-button {
+  display: block;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+#close-button span {
+  background: #777;
+  width: 30px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  top: 14px;
+}
+
+#close-button:hover span {
+	background: #333;
+}
+
+.x-1 {
+  transform: rotate(45deg);
+}
+
+.x-2 {
+  transform: rotate(-45deg);
+}
+
+img {
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	align-self: center;
+}
+
+.description {
+	font-size: 1em;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.left-column {
+	width: 66.67%;
+	height: auto;
+	padding: 20px;
+}
+
+img.left-column {
+	align-self: center;
+}
+.right-column {
+	width: 33.33%;
+}
+
+.full-width {
+	width: 100%;
+	height: auto;
+}

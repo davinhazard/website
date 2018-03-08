@@ -2,8 +2,13 @@
 <html>
 <head>
 	<title>Davin Hazard</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<meta name="viewport" content="width=device-width">
 </head>
 <body>
 	<!--Header-->
@@ -19,16 +24,12 @@
 			<span><a href="#contact">Contact</a></span>
 		</nav>
 	</header>
-	<!--Main Content-->
+
+<!--Work Preview Tiles-->
+	<div class="landing-background"></div>
+
+<!--Main Page Content-->
 	<div id="main">
-	<!--Work Preview Tiles-->
-		<div class="preview-tiles">
-			<span class="box-large" id="button-one">
-			<a href="#developer">Developer</a>
-			</span>
-			<span class="box-large" id="button-two"><a href="#designer">Designer</a></span>
-			<span class="box-large" id="button-three"><a href="#artist">Artist</a></span>
-		</div>
 	<!--About Section-->
 		<div id="about">
 			<img src="resources/images/elio.png">
@@ -40,43 +41,102 @@
 		</div>
 	<!--Work Section-->
 		<div id="work">
-			<div class="work-item" id="developer">
-				<h3>Developer</h3>
-				<span>Languages I speak : C++ Java Python HTML/CSS</span>
-				<div id="developer-items">
-					<span class="portfolio-item box-small" id="vr-icon">VR Games</span>
-					<span class="portfolio-item box-small" id="android-icon">Android App</span>
-					<span class="portfolio-item box-small" id="webdev-icon">Web Development</span>
-					<span class="portfolio-item box-small" id="animation-icon">Animation + Motion Capture</span>
+			<div class="tab">
+				<button id="dev-button" class="tablinks selected" onclick="openTab(event, 'Developer')">DEVELOPER</button>
+				<button id="design-button" class="tablinks" onclick="openTab(event, 'Designer')">DESIGNER</button>
+				<button id="art-button" class="tablinks" onclick="openTab(event, 'Artist')">ARTIST</button>
+			</div>
+			<h3 id="developer">Developer</h3>
+			<div class="row" id="developer-items">
+				<div class="item" id="vr-icon">
+					<img src="resources/images/square_stock_5.jpg" class="preview-image"/>
+					<a href="vr.html">
+					<div class="overlay"></div>
+					<span class="title">VR Games</span>
+					</a>
+				</div>
+				<div class="item" id="android-icon">
+					<img src="resources/images/square_stock_5.jpg" class="preview-image"/>
+					<a href="vr.html">
+					<div class="overlay"></div>
+					<span class="title">Android App</span>
+					</a>
+				</div>
+				<div class="item" id="animation-icon">
+					<img src="resources/images/icons/mocap_still.jpg" class="preview-image"/>
+					<a href="vr.html">
+					<div class="overlay"></div>
+					<span class="title">Animation + Motion Capture</span>
+					</a>
 				</div>
 			</div>
-			<div class="work-item" id="designer">
-				<h3>Designer</h3>
-				<span>Tools I use : Adobe Creative Suite My Own Two Hands</span>
-				<div id="designer-items">
-					<span class="portfolio-item box-small" id=product-icon>Product Design</span>
-					<span class="portfolio-item box-small" id="typography-icon">Typography + Bookmaking</span>
-					<span class="portfolio-item box-small" id="logo-icon">Logo Design</span>
+			<h3 id="designer">Designer</h3>
+			<div class="row" id="designer-items">
+				<div class="item" id="product-icon">
+					<img src="resources/images/square_stock_5.jpg" class="preview-image"/>
+					<a href="vr.html">
+					<div class="overlay"></div>
+					<span class="title">Product Design</span>
+					</a>
+				</div>
+				<div class="item" id="typography-icon">
+					<img src="resources/images/square_stock_5.jpg" class="preview-image"/>
+					<a href="vr.html">
+					<div class="overlay"></div>
+					<span class="title">Typography + Bookmaking</span>
+					</a>
+				</div>
+				<div class="item" id="logo-icon">
+					<img src="resources/images/square_stock_5.jpg" class="preview-image"/>
+					<a href="vr.html">
+					<div class="overlay"></div>
+					<span class="title">Graphic + Logo Design</span>
+					</a>
 				</div>
 			</div>
-			<div class="work-item" id="artist">
-				<h3>Artist</h3>
-				<span>Mediums I like : Painting Drawing Digital</span>
-				<div id="artist-items">
-					<span class="portfolio-item box-small" id="painting-icon">Painting</span>
-					<span class="portfolio-item box-small" id="digital-icon">Digital + Pixel Art</span>
-					<span class="portfolio-item box-small" id="modeling-icon">3D Modeling</span>
-					<span class="portfolio-item box-small" id="drawing-icon">Drawing</span>
+			<h3 id="artist">Artist</h3>
+			<div class="row" id="artist-items">
+				<div class="item" id="painting-icon">
+					<img src="resources/images/icons/windmills.jpg" class="preview-image"/>
+					<a href="vr.html">
+					<div class="overlay"></div>
+					<span class="title">Painting + Drawing</span>
+					</a>
+				</div>
+				<div class="item" id="digital-icon">
+					<img src="resources/images/icons/tesselate.jpg" class="preview-image"/>
+					<a href="vr.html">
+					<div class="overlay"></div>
+					<span class="title">Digital + Pixel Art</span>
+					</a>
+				</div>
+				<div class="item" id="modeling-icon">
+					<img src="resources/images/icons/frog_model.jpg" class="preview-image"/>
+					<a href="vr.html">
+					<div class="overlay"></div>
+					<span class="title">3D Modeling</span>
+					</a>
 				</div>
 			</div>
 		</div>
-	<!--Contact-->
-		<div id="contact">
-		</div>
+
 	<!--Footer-->
-		<footer>
-			<span>copyright Davin Hazard 2018</span>
+		<footer id="contact">
+			<div id="email"></div>
+			<div id="contact-links">
+				<span class="link" id="github"><a href="https://github.com/davinhazard" target="_blank"><img src="resources/images/icons/github_logo.png" ></a></span>
+				<span class="link" id="linkedin"><a href="https://www.linkedin.com/in/davinhazard/" target="_blank"><img src="resources/images/icons/linkedin_logo.png" ></a></span>
+			</div>
+				<p id="copyright">c Davin Hazard 2018</p>
 		</footer>
 	</div>
+
+<!-- JavaScript for animating portfolio items into open pages 
+	<script src="resources/js/transitionScript.js"></script>
+-->
+	<script src="resources/js/animateOnScroll.js"></script>
+	<script src="resources/js/setEmail.js"></script>
+	<script src="resources/js/openTab.js"></script>
+
 </body>
 </html>

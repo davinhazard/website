@@ -42,14 +42,13 @@
 	<!--Work Section-->
 		<div id="work">
 			<div class="tab">
-				<button id="dev-button" class="tablinks selected" onclick="openTab(event, 'Developer')">DEVELOPER</button>
-				<button id="design-button" class="tablinks" onclick="openTab(event, 'Designer')">DESIGNER</button>
-				<button id="art-button" class="tablinks" onclick="openTab(event, 'Artist')">ARTIST</button>
+				<button id="dev-button" class="tablinks selected" onclick="openTab(event, 'developer-items')">DEVELOPER</button>
+				<button id="design-button" class="tablinks" onclick="openTab(event, 'designer-items')">DESIGNER</button>
+				<button id="art-button" class="tablinks" onclick="openTab(event, 'artist-items')">ARTIST</button>
 			</div>
-			<h3 id="developer">Developer</h3>
-			<div class="row" id="developer-items">
+			<div class="tabcontent" id="developer-items">
 				<div class="item" id="vr-icon">
-					<img src="resources/images/square_stock_5.jpg" class="preview-image"/>
+					<img src="resources/images/icons/vr_still.png" class="preview-image"/>
 					<a href="vr.html">
 					<div class="overlay"></div>
 					<span class="title">VR Games</span>
@@ -70,8 +69,7 @@
 					</a>
 				</div>
 			</div>
-			<h3 id="designer">Designer</h3>
-			<div class="row" id="designer-items">
+			<div class="tabcontent" id="designer-items">
 				<div class="item" id="product-icon">
 					<img src="resources/images/square_stock_5.jpg" class="preview-image"/>
 					<a href="vr.html">
@@ -86,6 +84,7 @@
 					<span class="title">Typography + Bookmaking</span>
 					</a>
 				</div>
+				<!-- Removing Logo + Graphic Design Section 
 				<div class="item" id="logo-icon">
 					<img src="resources/images/square_stock_5.jpg" class="preview-image"/>
 					<a href="vr.html">
@@ -93,9 +92,9 @@
 					<span class="title">Graphic + Logo Design</span>
 					</a>
 				</div>
+				-->
 			</div>
-			<h3 id="artist">Artist</h3>
-			<div class="row" id="artist-items">
+			<div class="tabcontent" id="artist-items">
 				<div class="item" id="painting-icon">
 					<img src="resources/images/icons/windmills.jpg" class="preview-image"/>
 					<a href="vr.html">
@@ -118,6 +117,8 @@
 					</a>
 				</div>
 			</div>
+
+			<button id="view-all" onclick="openTab(event, 'view-all')">View All Work</button>
 		</div>
 
 	<!--Footer-->

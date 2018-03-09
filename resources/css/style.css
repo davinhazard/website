@@ -174,9 +174,9 @@ needed */
 	width: 80%;
 	margin: auto;
 	padding-top: 100px;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-bottom: 100px;
+	/*padding-left: 60px;
+	padding-right: 60px;*/
+	padding-bottom: 50px;
 }
 
 .tab {
@@ -184,18 +184,38 @@ needed */
 	margin: auto;
 	text-align: center;
 	padding: 3px 0px;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 }
 
+/* tabs displayed centered vertically 
+in mobile; same width as .items */
 .tab button {
-	width: 31%;
-	margin: 0.5%;
-	font-size: 2em;
+	width: 75%;
+	margin: auto;
+	font-size: 1.5em;
 	background-color: white;
 	border: none;
 	font-family: inherit;
 	color: #606060;
 	border: 3px solid white;
+}
+
+/* desktop styling */ 
+@media screen and (min-width: 500px) {
+	.work {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.tab {
+		margin-bottom: 50px;
+	}
+	.tab button {
+		width: 31%;
+		margin: 0.5%;
+		font-size: 2em;
+	}
+
+
 }
 
 #dev-button:hover {
@@ -213,7 +233,7 @@ needed */
 .tab button.selected {
 	background-color: rgb(177, 177, 177);
 	color: white;
-	border: none;
+	border: 3px solid white;
 	outline: none;
 }
 
@@ -243,8 +263,12 @@ button#view-all:hover {
 	position: relative;
 	display: block;
 	width: 75%;
-	margin: 50px;
+	margin: 12.5%;
 	box-sizing: border-box;
+}
+
+.tabcontent .item:last-child {
+	margin-bottom: 0;
 }
 
 .tabcontent {

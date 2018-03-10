@@ -495,12 +495,12 @@ span.title a {
 #vr-icon img{
 	width: 100%;
 }
-/*
+*/
 #vr-icon {
-	background-image: url("../images/square_stock_5.jpg");
+	background-image: url("../images/gif/hi-res-bubble-pop.gif");
 	background-size: cover;
 }
-*/
+
 #android-icon {
 	background-image: url("../images/square_stock_6.jpg");
 	background-size: cover;
@@ -524,6 +524,12 @@ revealing gif underneath */
 
 /* desktop styling : show preview gif on hover */
 @media screen and (min-width: 600px) {
+	#vr-icon:hover .preview-image {
+		opacity: 0;
+	}
+	#vr-icon:hover {
+		background-image: url("../images/gifs/hi-res-bubble-pop.gif");
+	}
 	#animation-icon:hover .preview-image {
 		opacity: 0;	
 	}

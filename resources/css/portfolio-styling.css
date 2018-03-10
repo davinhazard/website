@@ -4,8 +4,8 @@
 }
 
 body {
-	font-family: apercu, 'Work Sans', Helvetica;
-	border: 25px outset rgba(177, 177, 177, 0.5);
+	font-family: 'Source Sans Pro', apercu, 'Work Sans', Helvetica;
+	border: 25px solid rgba(225, 225, 225, 0.5);
 	padding: 25px;
 	min-height: 100vh;
 	box-sizing: border-box;

@@ -23,7 +23,21 @@
 			<span><a href="#work">Work</a></span>
 			<span><a href="#contact">Contact</a></span>
 		</nav>
+
+	<!-- Mobile Menu Icon -->
+		<div id="hamburger" class="" onclick="toggleMenuIcon(this)">
+			<div class="line first"></div>
+			<div class="line second"></div>
+			<div class="line third"></div>
+		</div>
+	<!-- Mobile Menu Dropdown -->
+		<ul id="dropdown">
+			<li><a href="#about">About</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#contact">Contact</a></li>	
+		</ul>		
 	</header>
+
 
 <!--Work Preview Tiles-->
 	<div class="landing-background"></div>
@@ -128,7 +142,7 @@
 				<span class="link" id="github"><a href="https://github.com/davinhazard" target="_blank"><img src="resources/images/icons/github_logo.png" ></a></span>
 				<span class="link" id="linkedin"><a href="https://www.linkedin.com/in/davinhazard/" target="_blank"><img src="resources/images/icons/linkedin_logo.png" ></a></span>
 			</div>
-				<p id="copyright">c Davin Hazard 2018</p>
+				<p id="copyright">&copy Davin Hazard 2018</p>
 		</footer>
 	</div>
 
@@ -138,6 +152,7 @@
 	<script src="resources/js/animateOnScroll.js"></script>
 	<script src="resources/js/setEmail.js"></script>
 	<script src="resources/js/openTab.js"></script>
+	<script src="resources/js/toggleMenuIcon.js"></script>
 
 </body>
 </html>

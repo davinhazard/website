@@ -43,6 +43,7 @@ header {
 	padding-left: 40px;
 	padding-bottom: 20px;
 	justify-content: space-between;
+	align-items: center;
 }
 
 #logo span{
@@ -69,6 +70,71 @@ header nav a:hover {
 a:link  {
 	text-decoration: none;
 }
+
+/*don't show regular nav bar in mobile*/
+@media screen and (max-width: 600px) {
+	header nav {
+		display:none;
+	}
+}
+
+#hamburger {
+	align-items: bottom;
+	padding-right: 60px;
+	cursor: pointer;
+}
+#hamburger .line{
+	width: 30px;
+	height: 4px;
+	background-color: gray;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+#hamburger:hover .line {
+	background-color: #202020;
+}
+
+/*Animate from hamburger icon to x icon when clicked*/
+
+/* Rotate first bar */
+.change .line.first {
+	-webkit-transform-origin: center;
+    transform-origin: 50% 50%;
+    -webkit-transform: translateY(10px) rotate(-45deg); ;
+    transform: translateY(10px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .line.second {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .line.third {
+	-webkit-transform-origin: center;
+	transform-origin: 50% 50%;
+    -webkit-transform: translateY(-10px) rotate(45deg);
+    transform: translateY(-10px) rotate(45deg);
+}
+
+#dropdown {
+	display: none;
+}
+
+#dropdown .clicked {
+}
+
+
+/*don't show hamburger dropdown in desktop*/
+@media screen and (min-width: 600px) {
+	#hamburger {
+		display: none;
+	}
+
+}
+
+
 /* removed main relative positioning;
 -question about padding between work elements and
 within elements-shifts tiles up when bottom padding added;
@@ -497,7 +563,7 @@ span.title a {
 }
 */
 #vr-icon {
-	background-image: url("../images/gif/hi-res-bubble-pop.gif");
+	background-image: url("../images/gifs/hi-res-bubble-pop.gif");
 	background-size: cover;
 }
 

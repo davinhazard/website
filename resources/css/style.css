@@ -611,6 +611,11 @@ span.title a {
 	background-size: cover;
 }
 
+#product-icon {
+	background-image: url("../images/gifs/color-changing-sleeve.gif");
+	background-size: cover;
+}
+
 /*mobile : background is set to gif and when 
 item is fully in screen, image opacity is set to 0
 revealing gif underneath */
@@ -635,6 +640,10 @@ revealing gif underneath */
 	#animation-icon:hover {
 		background-image: url("../images/gifs/mocap_dance.gif");
 	}
+
+	#product-icon:hover .preview-image {
+		opacity: 0;
+	}
 }
 /*
 #designer-items {
@@ -656,12 +665,12 @@ revealing gif underneath */
 }
 
 */
-
+/*
 #product-icon {
 	background-image: url("../images/square_stock_4.jpg");
 	background-size: cover;
 }
-
+*/
 #typography-icon {
 	background-image: url("../images/square_stock_5.jpg");
 	background-size: cover;

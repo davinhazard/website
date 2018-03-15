@@ -3,6 +3,13 @@
 	src: ../fonts/Apercu.otf;
 }
 
+html {
+	-moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+	font-size: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -16,12 +23,12 @@ body {
 strong { 
 	font-weight: bold; 
 }
-
+/*
 h1 {
 	display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
+    font-size: 2rem;
+    margin-top: 0.67rem;
+    margin-bottom: 0.67rem;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
@@ -29,9 +36,9 @@ h1 {
 
 h3 { 
     display: block;
-    font-size: 1.17em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    font-size: 1.17rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
@@ -39,14 +46,14 @@ h3 {
 
 h4 { 
     display: block;
-    font-size: 1em;
-    margin-top: 1.33em;
+    font-size: 1rem;
+    margin-top: 1.33rem;
     margin-bottom: 1.33em;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
 }
-
+*/
 h5 { 
     display: block;
     font-size: .83em;
@@ -58,7 +65,15 @@ h5 {
     margin-right: 0;
     font-weight: bold;
 }
-
+/*
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+*/
 header {
 	display: flex;
 	width: 100%;
@@ -73,7 +88,7 @@ header {
 	align-items: baseline;
 }
 
-#title {
+#main-title {
 	font-size: 36px;
 	color: #404040;
 }
@@ -95,7 +110,7 @@ a:link {
 	padding-top: 1.75em;
 	padding-bottom: 1.75em;
 }
-
+/*
 #close-button {
   display: block;
   position: absolute;
@@ -125,7 +140,7 @@ a:link {
 .x-2 {
   transform: rotate(-45deg);
 }
-
+*/
 #about {
 	padding-top: 50px;
 	display: flex;
@@ -147,11 +162,29 @@ a:link {
 	
 }
 
-#about #about-text {
+#about .title {
+	font-size: 1.875rem;
+	margin-bottom: 1em;
+}
+
+#about .subtitle {
+	font-size: 1.5rem;
+	margin-bottom: 0.75em;
+}
+
+#about-text {
 	width: 75%;
 	color: white;
-	font-size: 4vmin;
 	text-align: center;
+}
+
+#about p {
+	font-size: 1.25rem;
+	margin-bottom: 1.75em;
+}
+
+#about p:last-child {
+	margin-bottom: 0;
 }
 
 /*desktop styling */
@@ -162,7 +195,7 @@ a:link {
 	}
 
 	#about img{
-		width: 25%;
+		width: 20%;
 		margin-left: 10%;
 	}
 
@@ -186,12 +219,19 @@ img {
 .content {
 	width: 80%;
 	margin: auto;
+	text-align:center;
+}
+
+.content .title {
+	font-size: 1.875rem;
+	margin-bottom: 1em;
+	text-align: left;
 }
 
 .row {
 	width: 100%;
-	text-align: center;
-	margin: auto;
+	text-align: right;
+	margin-right: 10%;
 }
 
 @media screen and (min-width: 600px) {
@@ -217,19 +257,31 @@ img.full-width{
 	margin: auto;
 }
 */
+/*
 .content p {
 	font-size: 18px;
 	line-height: 24px;
 	text-align: left;
 	padding-bottom: 24px;
 }
-
+*/
+.content p {
+	font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    max-width: 570px;
+}
 .content h3 {
 	text-align: left;
 }
 
 .section {
-	display: inline-block;
+	/*display: inline-block;*/
+	margin-left: 50%;
 	box-sizing: border-box;
 }
 
@@ -245,14 +297,15 @@ img.left-two-thirds {
 .right-third {
 	width: 33.33%;
 }
-
+/*
 .full-width {
 	width: 100%;
 	height: auto;
 }
-
+/*
 .half-width {
 	width: 45%;
 	padding: 2%;
 	vertical-align: middle;
 }
+*/

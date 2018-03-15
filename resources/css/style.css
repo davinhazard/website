@@ -741,11 +741,12 @@ revealing gif underneath */
 }
 
 footer {
+	padding: 20px 0px;
 	background-color: rgb(177, 177, 177);
-
 	color: white;
 	font-size: 1em;
 	line-height: 1.5em;
+	text-align: center;
 }
 /*
 .wrapper {
@@ -767,12 +768,24 @@ footer h3 {
 }
 
 .link {
-	padding: 5px;
+	display: inline-block;
+	height: 34px;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: bottom;
+}
+
+.link a {
+	display: inline-block;
+	height: 100%;
+}
+
+.link img {
+	object-fit: contain;
 }
 
 footer #copyright {
 	color: white;
-	text-align: right;
 	padding-top: 1em;
 }
 

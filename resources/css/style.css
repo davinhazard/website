@@ -225,7 +225,7 @@ with space-between instead of around */
 	flex-direction: column;
 	justify-content: center;
 	align-items: center; 
-	background-color: rgb(177, 177, 177);
+	background-color: rgb(150, 150, 150);
 	margin-left: 0;
 	margin-right: 0;
 	width: 100%;
@@ -333,7 +333,7 @@ in mobile; same width as .items */
 }
 
 .tab button.selected {
-	background-color: rgb(177, 177, 177);
+	background-color: rgb(150, 150, 150);
 	color: white;
 	border: 3px solid white;
 	outline: none;
@@ -742,7 +742,7 @@ revealing gif underneath */
 
 footer {
 	padding: 20px 0px;
-	background-color: rgb(177, 177, 177);
+	background-color: rgb(150, 150, 150);
 	color: white;
 	font-size: 1em;
 	line-height: 1.5em;

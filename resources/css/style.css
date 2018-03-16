@@ -735,7 +735,7 @@ revealing gif underneath */
 }
 
 #modeling-icon:hover {
-	background-image: url("../images/gifs/slippery_frog.gif");
+	background-image: url("../images/gifs/slippery-frog.gif");
 	background-size: cover;
 	background-position: 50% 50%;
 }

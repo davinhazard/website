@@ -305,16 +305,16 @@ img.full-width{
 	}
 }
 
-figure.section {
-	max-width: 50%
-}
-
-figure img {
-	width: 100%;
-	object-fit: contain;
+figure {
+	margin: 1.75em 0;
 }
 
 img {
 	width: 100%;
+	max-height: 85vh;
 	object-fit: contain;
+}
+
+figcaption {
+	color: rgb(150, 150, 150);
 }

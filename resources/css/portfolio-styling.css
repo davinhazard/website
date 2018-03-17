@@ -294,17 +294,6 @@ img.full-width{
 	text-align: left;
 }
 
-@media screen and (min-width: 600px) {
-	.content {
-		width: 80%;
-	}
-
-	.section {
-		margin-left: 15%;
-		box-sizing: border-box;
-	}
-}
-
 figure {
 	margin: 1.75em 0;
 }
@@ -317,4 +306,41 @@ img {
 
 figcaption {
 	color: rgb(150, 150, 150);
+}
+
+/*specific to vr styling - only play gifs when they
+are fully in viewport*/
+
+#transport-gif {
+	background-image: url("../images/gifs/transport-600-px.gif");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#bubble-pop-gif {
+	background-image: url("../images/gifs/bubble-pop-570-px.gif");
+	background-size: contain;	
+	background-repeat: no-repeat;
+}
+
+figure .hide-image {
+	opacity: 0;
+}
+
+@media screen and (min-width: 600px) {
+	.content {
+		width: 80%;
+	}
+
+	.section {
+		margin-left: 15%;
+		box-sizing: border-box;
+	}
+
+	figure {
+		margin-left: 15%;
+		max-width: 570px;
+	}
+
+	img {
 }

@@ -81,7 +81,7 @@ header {
 	z-index: 10;
 	background-color: white;
 	padding-top: 20px;
-	padding-left: 40px;
+	padding-left: 20px;
 	padding-bottom: 20px;
 	justify-content: space-between;
 	box-sizing: border-box;
@@ -89,14 +89,14 @@ header {
 }
 
 #main-title {
-	font-size: 36px;
+	font-size: 1.25rem;
 	color: #404040;
 }
 
 header nav a {
 	color: gray;
-	padding: 8px;
-	font-size: 18px;
+	padding: 4px;
+	font-size: 16px;
 }
 
 header nav a:hover {
@@ -106,9 +106,45 @@ header nav a:hover {
 a:link {
 	text-decoration: none;
 }
+
 .description{
 	padding-top: 1.75em;
 	padding-bottom: 1.75em;
+}
+
+.full-nav-bar {
+	display: none;
+}
+
+.mobile-nav {
+	display: inline;
+	font-size: 30px;
+	font-style: bold;
+}
+
+
+/*desktop styling*/
+@media screen and (min-width: 600px) {
+	header {
+		padding-left: 40px;
+	}
+
+	#main-title {
+		font-size: 36px;
+	}
+
+	header nav a {
+	padding: 8px;
+	font-size: 18px;
+	}
+
+	.full-nav-bar {
+		display: inline;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
 }
 /*
 #close-button {

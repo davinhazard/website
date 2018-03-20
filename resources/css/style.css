@@ -409,15 +409,6 @@ by default */
 		margin: 0.5%;
 	}
 }
-/*
-.item {
-	flex-basis: 100%;
-	position: relative;
-	cursor: pointer;
-	margin: 0.375em;
-}
-*/
-
 
 .overlay {
 	position: absolute;

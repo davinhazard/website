@@ -373,9 +373,15 @@ figure .hide-image {
 		box-sizing: border-box;
 	}
 
+	/* by default figure is aligned with text paragraphs with
+	max width of 570px */
 	figure {
 		margin-left: 15%;
 		max-width: 570px;
+	}
+
+	figure.full-width {
+		max-width: 100%;
 	}
 
 	img {

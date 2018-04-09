@@ -188,7 +188,8 @@ a:link {
 	margin-left: 0;
 	margin-right: 0;
 	width: 100%;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
+	min-height: 85vh;
 }
 
 #about img {
@@ -230,6 +231,14 @@ a:link {
 
 #about p:last-child {
 	margin-bottom: 0;
+}
+
+#about a {
+	color: rgb(107, 185, 254);
+}
+
+#about a:hover, #about a:active {
+	color: rgb(255, 147, 74);
 }
 
 /*desktop styling */
@@ -293,10 +302,12 @@ img {
 		display: inline-block;
 	}
 }
+
+/*
 img.full-width{
 	padding: 75px;
 }
-
+*/
 .description {
 	font-size: 1em;
 }
@@ -324,6 +335,8 @@ img.full-width{
     font-style: normal;
     text-align: left;
     max-width: 570px;
+    /* CONSIDER: same max width as images? 
+    max-width: 75vh; */
     margin-bottom: 1.75em;
 }
 .content h3 {
@@ -336,10 +349,21 @@ figure {
 
 img {
 	width: 100%;
-	max-height: 85vh;
+	/*max-width: 550px;*/
+	height: 100%;
+	/*max-height: 85vh;*/
 	object-fit: contain;
 }
 
+/* specifically for portrait art images */
+.full-width img {
+	max-height: 85vh;
+}
+/*
+.image-to-gif {
+	max-height: 75vh;
+}
+*/
 figcaption {
 	color: rgb(150, 150, 150);
 }
@@ -351,6 +375,7 @@ are fully in viewport*/
 	background-image: url("../images/gifs/transport-600-px.gif");
 	background-size: contain;
 	background-repeat: no-repeat;
+	/*max-height: 85vh;*/
 }
 
 #bubble-pop-gif {
@@ -363,12 +388,19 @@ figure .hide-image {
 	opacity: 0;
 }
 
+/*
+img.image-to-gif {
+	width: 100%;
+	height: auto;
+}
+*/
 @media screen and (min-width: 600px) {
 	.content {
 		width: 80%;
 	}
 
-	.section {
+/* get rid of .section?? redundant - add styling to paragraphs */
+	.content p, .content .title {
 		margin-left: 15%;
 		box-sizing: border-box;
 	}
@@ -378,11 +410,13 @@ figure .hide-image {
 	figure {
 		margin-left: 15%;
 		max-width: 570px;
+		/* PROBLEM-SOLVED: adjusts for square img-to-gifs
+		to always fit in screen */
+		max-width: 75vh;
 	}
 
 	figure.full-width {
 		max-width: 100%;
 	}
 
-	img {
 }

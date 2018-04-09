@@ -16,7 +16,7 @@ body {
 h1 {
 	display: block;
     font-size: 2em;
-    margin-top: 0.67em;
+    /*margin-top: 0.67em;*/
     margin-bottom: 0.67em;
     margin-left: 0;
     margin-right: 0;
@@ -246,7 +246,8 @@ with space-between instead of around */
 	height: auto;
 	border-radius: 50%;
 	border: solid rgb(255, 219, 150) 7px;
-	
+	margin-top: 10%;
+	margin-bottom: 5%;	
 }
 
 /* note: originally text was 22px; changed
@@ -257,8 +258,11 @@ needed */
 #about #about-text {
 	width: 75%;
 	color: white;
-	font-size: 4vmin;
+	/*font-size: 4vmin;*/
+	font-size: 22px;
+	font-size: 1.375rem;
 	text-align: center;
+	margin-bottom: 10%;
 }
 
 /*desktop styling */
@@ -272,6 +276,7 @@ needed */
 	#about img{
 		width: 25%;
 		max-width: 264px;
+		margin: 0px;
 		margin-left: 10%;
 	}
 
@@ -280,6 +285,7 @@ needed */
 		width: 50%;
 		padding:20px;
 		padding-right: 10%;
+		margin-bottom: 0px;
 	}
 }
 
@@ -382,6 +388,10 @@ button#view-all:hover {
 	box-sizing: border-box;
 }
 
+.item img {
+	object-fit: cover;
+}
+
 .tabcontent .item:last-child {
 	margin-bottom: 0;
 }
@@ -463,12 +473,19 @@ by default */
 	text-align: center;
 	opacity: 0; 
 }
+
+/* when clicked */
+.item:active .overlay {
+	opacity: 1;
+}
+
 /* on mobile screens, animate overlay & title when item
 is fully in window */
 @media screen and (max-width: 600px) {
 	.animate-on-scroll {
-		opacity: 0.5;
+		opacity: 0.75;
 	}
+
 
 	.item .show-title {
 		opacity: 1;
@@ -479,7 +496,11 @@ is fully in window */
 on hover */
 @media screen and (min-width: 600px) {
 	.item:hover .overlay {
-		opacity: 0.5;
+		opacity: 0.75;
+	}
+	/* when clicked */
+	.item:active .overlay {
+		opacity: 1;
 	}
 
 	.item .title {
@@ -492,113 +513,80 @@ on hover */
 
 }
 
-#developer-items .item:hover {
-	/*box-shadow: inset 0 0 0 250px rgba(235, 113, 251, 0.7);
-	box-shadow: inset 0 0 0 250px rgba(169, 178, 254, 0.7);*/
-	/*box-shadow: inset 0 0 0 250px rgba(211, 124, 132, 0.7);*/
-	
-}
-
+/* set all .item icon background-images here to show when 
+hovered over or scrolled past in mobile; most set to gifs,
+others the same as the preview-image but can be changed easily
+in the future */
 #vr-icon {
 	background-image: url("../images/gifs/hi-res-bubble-pop.gif");
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #android-icon {
-	background-image: url("../images/square_stock_6.jpg");
-	background-size: cover;
+	background-image: url("../images/icons/app-icon.jpg");
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 
 #animation-icon {
 	background-image: url("../images/gifs/mocap_dance.gif");
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #product-icon {
 	background-image: url("../images/gifs/color-changing-sleeve.gif");
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
-}
-
-/*mobile : background is set to gif and when 
-item is fully in screen, image opacity is set to 0
-revealing gif underneath */
-
-@media screen and (max-width: 600px) {
-	#animation-icon .show-gif {
-		opacity: 0;
-	}
-}
-
-/* desktop styling : show preview gif on hover */
-@media screen and (min-width: 600px) {
-	#vr-icon:hover .preview-image {
-		opacity: 0;
-	}
-	#vr-icon:hover {
-		background-image: url("../images/gifs/hi-res-bubble-pop.gif");
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	#animation-icon:hover .preview-image {
-		opacity: 0;	
-	}
-	#animation-icon:hover {
-		background-image: url("../images/gifs/mocap_dance.gif");
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-
-	#product-icon:hover .preview-image {
-		opacity: 0;
-	}
 }
 
 #typography-icon {
-	background-image: url("../images/square_stock_5.jpg");
-	background-size: cover;
+	background-image: url("../images/icons/typography-icon.jpg");
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
-#logo-icon {
-	background-image: url("../images/square_stock_6.jpg");
-	background-size: cover;
+#painting-icon {
+	background-image: url("../images/icons/windmills.jpg");
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
-#painting-icon:hover {
-	background-image: url("../images/gifs/painting_drawing.gif");
-	background-size: cover;
+#digital-icon {
+	background-image: url("../images/gifs/flower&thebee.gif");
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
-#digital-icon .preview-image {
-	transition: opacity 0.3 ease;
-}
-
-#digital-icon:hover {
-	background-image: url("../images/gifs/tesselate.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-#digital-icon:hover .preview-image {
-	opacity: 0;
-}
-
-#modeling-icon:hover .preview-image {
-	opacity: 0;
-}
-
-#modeling-icon:hover {
+#modeling-icon {
 	background-image: url("../images/gifs/slippery-frog.gif");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+}
+
+/*mobile : background is set to gif and when 
+item is fully in screen, .show-gif is toggled
+on img - opacity is set to 0
+revealing gif underneath */
+
+@media screen and (max-width: 600px) {
+	/*#animation-icon .show-gif {
+		opacity: 0;
+	}*/
+	.show-gif {
+	opacity: 0;
+}
+}
+
+/* desktop styling : show background image (preview gif)
+ on hover */
+@media screen and (min-width: 600px) {
+	.item:hover .preview-image {
+		opacity: 0;
+	}
 }
 
 footer {
@@ -616,6 +604,7 @@ footer h3 {
 
 #contact-links {
 	padding-top: 1.5em;
+	padding-bottom: 1.5em;
 }
 
 .link {
@@ -635,9 +624,61 @@ footer h3 {
 	object-fit: contain;
 }
 
+/* Email popup box container */
+.popup {
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Popup with text */
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 16px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 27%;
+	/*right: -91%;*/
+	margin-left: -80px;
+}
+
+/* popup arrow */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* toggle this class - hide/show popup */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 footer #copyright {
 	color: white;
 	padding-top: 1em;
+	font-size: 18px;
 }
 
 /* 

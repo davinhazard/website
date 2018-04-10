@@ -93,6 +93,10 @@ header {
 	color: #404040;
 }
 
+nav {
+	white-space: nowrap;
+}
+
 header nav a {
 	color: gray;
 	padding: 4px;
@@ -120,8 +124,12 @@ a:link {
 	display: inline;
 	font-size: 30px;
 	font-style: bold;
+	vertical-align: middle;
 }
 
+img.mobile-nav {
+	width: 18px;
+}
 
 /*desktop styling*/
 @media screen and (min-width: 600px) {

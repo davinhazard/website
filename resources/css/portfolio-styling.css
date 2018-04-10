@@ -410,6 +410,9 @@ img.image-to-gif {
 	figure {
 		margin-left: 15%;
 		max-width: 570px;
+	}
+
+	figure.fit-screen-width {
 		/* PROBLEM-SOLVED: adjusts for square img-to-gifs
 		to always fit in screen */
 		max-width: 75vh;

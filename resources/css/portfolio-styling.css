@@ -127,7 +127,7 @@ a:link {
 	vertical-align: middle;
 }
 
-img.mobile-nav {
+.mobile-nav img {
 	width: 18px;
 }
 
@@ -365,8 +365,9 @@ img {
 	object-fit: contain;
 }
 
-/* specifically for portrait art images */
-.full-width img {
+/* scale portrait images to fit into viewport */
+.portrait img, 
+video.portrait {
 	max-height: 85vh;
 }
 /*
@@ -437,7 +438,7 @@ img.image-to-gif {
 		max-width: 75vh;
 	}
 
-	figure.full-width {
+	figure.portrait {
 		max-width: 100%;
 	}
 
